@@ -15,7 +15,7 @@ interface ISecrets {
 }
 
 async function getSecrets(): Promise<ISecrets> {
-    const token = await (await kvClient.getSecret(apiAccessToken)).value;
+    const token = (await kvClient.getSecret(apiAccessToken)).value;
     console.log(`Latest version of the secret ${apiAccessToken}: `, token);
 
     return {
