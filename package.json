@@ -1,0 +1,22 @@
+{
+  "name": "@hmsdevelopment/hms-netsuite-kv-function-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.2.0",
+    "@azure/identity": "^3.1.1",
+    "@azure/keyvault-secrets": "^4.6.0",
+    "@types/node": "^18.11.10",
+    "azure-functions-core-tools": "^4.x",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.0.0"
+  }
+}
